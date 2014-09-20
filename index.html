@@ -1,7 +1,245 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPenditure Left Navigation</title>
+    <link rel="stylesheet" href="styles/app.css"/>
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="container">
+
+<div class="sidebar">
+    <!-- Fixed width sidebar -->
+    <div class="full-menu">
+        <div class="logo-container"></div>
+        <div class="user-container row">
+            <div class="medium-4 columns">
+                <img src="images/user.png">
+            </div>
+            <div class="medium-8 columns">
+                <div class="fullname">Niels Dierickx</div>
+                <div class="userrole">User</div>
+            </div>
+        </div>
+        <ul class="off-canvas-list">
+            <li><label class="header">Main</label></li>
+            <li><a href="#"><i class="fi-clipboard-notes"></i>Expenses</a></li>
+            <li><a href="#"><i class="fi-credit-card"></i>Statements</a></li>
+            <li><a href="#"><i class="fi-results-demographics"></i>Business Cards</a></li>
+            <li>
+              <a id="toggle-more" href="#show-more" class="more-link" data-toggle="">
+                <span class="to-toggle">+ 2 more...</span>
+                <span class="to-toggle" style="display:none">-</span>
+              </a></li>
+            <li id="show-more" style="display: none" class="to-toggle">
+              <ul class="off-canvas-list">
+                <li><a href="#">More 1</a></li>
+                <li><a href="#">More 2</a></li>
+              </ul>
+            </li>
+        </ul>
+        <ul class="off-canvas-list">
+            <li><label class="header">Settings</label></li>
+            <li><a href="#"><i class="fi-widget"></i>Personal</a></li>
+            <li><a href="#"><i class="fi-widget"></i>Company</a></li>
+        </ul>
+        <ul class="off-canvas-list">
+            <li><label class="header">Account management</label></li>
+            <li><label>
+                <div class="progress radius">
+                    <span class="meter" style="width: 80%"></span>
+                </div>
+                <div class="text-right small">80% complete</div>
+            </label>
+            </li>
+        </ul>
+    </div>
+    <div class="small-menu">
+        <div class="logo-container"></div>
+        <div class="user-container row">
+            <img src="images/user.png">
+        </div>
+        <ul class="off-canvas-list">
+            <li><label class="header">&nbsp;</label></li>
+            <li><a href="#"><i class="fi-clipboard-notes"></i></a></li>
+            <li><a href="#"><i class="fi-credit-card"></i></a></li>
+            <li><a href="#"><i class="fi-results-demographics"></i></a></li>
+            <li><a href="#" class="more-link">&nbsp;</a></li>
+        </ul>
+        <ul class="off-canvas-list">
+            <li><label class="header">&nbsp;</label></li>
+            <li><a href="#"><i class="fi-widget"></i></a></li>
+            <li><a href="#"><i class="fi-widget"></i></a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div>
+    <div class="small-12 columns">
+
+        <h5>Larger Content Table</h5>
+        <table class="responsive">
+            <tbody>
+            <tr>
+                <th>Perk</th>
+                <th>Description</th>
+                <th>ID</th>
+                <th>Skill Req</th>
+                <th>Perk Req</th>
+            </tr>
+            <tr>
+                <td>Steel Smithing</td>
+                <td>Can create Steel armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb40d</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Arcane Blacksmith</td>
+                <td>You can improve magical weapons and armor.</td>
+                <td><span style="font-size: x-small" class="idref">0005218e</span></td>
+                <td>60 Smithing</td>
+                <td>Steel Smithing</td>
+            </tr>
+            <tr>
+                <td>Dwarven Smithing</td>
+                <td>Can create Dwarven armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb40e</td>
+                <td>30 Smithing</td>
+                <td>Steel Smithing</td>
+            </tr>
+            <tr>
+                <td>Orcish Smithing</td>
+                <td>Can create Orcish armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb410</td>
+                <td>50 Smithing</td>
+                <td>Dwarven Smithing</td>
+            </tr>
+            <tr>
+                <td>Ebony Smithing</td>
+                <td>Can create Ebony armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb412</td>
+                <td>80 Smithing</td>
+                <td>Orcish Smithing</td>
+            </tr>
+            <tr>
+                <td>Daedric Smithing</td>
+                <td>Can create Daedric armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb413</td>
+                <td>90 Smithing</td>
+                <td>Ebony Smithing</td>
+            </tr>
+            <tr>
+                <td>Elven Smithing</td>
+                <td>Can create Elven armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb40f</td>
+                <td>30 Smithing</td>
+                <td>Steel Smithing</td>
+            </tr>
+            <tr>
+                <td>Advanced Armors</td>
+                <td>Can create Scaled and Plate armor at forges, and improve them twice as much.</td>
+                <td>000cb414</td>
+                <td>50 Smithing</td>
+                <td>Elven Smithing</td>
+            </tr>
+            <tr>
+                <td>Glass Smithing</td>
+                <td>Can create Glass armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb411</td>
+                <td>70 Smithing</td>
+                <td>Advanced Armors</td>
+            </tr>
+            <tr>
+                <td>Dragon Armor</td>
+                <td>Can create Dragon armor at forges, and improve them twice as much.</td>
+                <td>00052190</td>
+                <td>100 Smithing</td>
+                <td>Daedric Smithing or Glass Smithing</td>
+            </tr>
+            <tr>
+                <td>Steel Smithing</td>
+                <td>Can create Steel armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb40d</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Arcane Blacksmith</td>
+                <td>You can improve magical weapons and armor.</td>
+                <td><span style="font-size: x-small" class="idref">0005218e</span></td>
+                <td>60 Smithing</td>
+                <td>Steel Smithing</td>
+            </tr>
+            <tr>
+                <td>Dwarven Smithing</td>
+                <td>Can create Dwarven armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb40e</td>
+                <td>30 Smithing</td>
+                <td>Steel Smithing</td>
+            </tr>
+            <tr>
+                <td>Orcish Smithing</td>
+                <td>Can create Orcish armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb410</td>
+                <td>50 Smithing</td>
+                <td>Dwarven Smithing</td>
+            </tr>
+            <tr>
+                <td>Ebony Smithing</td>
+                <td>Can create Ebony armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb412</td>
+                <td>80 Smithing</td>
+                <td>Orcish Smithing</td>
+            </tr>
+            <tr>
+                <td>Daedric Smithing</td>
+                <td>Can create Daedric armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb413</td>
+                <td>90 Smithing</td>
+                <td>Ebony Smithing</td>
+            </tr>
+            <tr>
+                <td>Elven Smithing</td>
+                <td>Can create Elven armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb40f</td>
+                <td>30 Smithing</td>
+                <td>Steel Smithing</td>
+            </tr>
+            <tr>
+                <td>Advanced Armors</td>
+                <td>Can create Scaled and Plate armor at forges, and improve them twice as much.</td>
+                <td>000cb414</td>
+                <td>50 Smithing</td>
+                <td>Elven Smithing</td>
+            </tr>
+            <tr>
+                <td>Glass Smithing</td>
+                <td>Can create Glass armor and weapons at forges, and improve them twice as much.</td>
+                <td>000cb411</td>
+                <td>70 Smithing</td>
+                <td>Advanced Armors</td>
+            </tr>
+            <tr>
+                <td>Dragon Armor</td>
+                <td>Can create Dragon armor at forges, and improve them twice as much.</td>
+                <td>00052190</td>
+                <td>100 Smithing</td>
+                <td>Daedric Smithing or Glass Smithing</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+</div>
+
+
+<script src="scripts/vendor/vendor.js"></script>
 </body>
 </html>
